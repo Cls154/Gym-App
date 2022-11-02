@@ -1,0 +1,239 @@
+:root {
+  --cp-black: #202020;
+  --cp-white: #E7DDDD;
+  --cp-grey: #807A73;
+  --cp-orange: #FF682C;
+  --cp-l-grey: #C1B9B2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--cp-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide-page {
+  display: none;
+}
+
+.on-page {
+  border-bottom: 1px solid var(--cp-black);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar div div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar div div img {
+  width: 96px;
+  height: 84px;
+}
+
+.navbar div div h2 {
+  color: var(--cp-black);
+  letter-spacing: 3px;
+  font-size: 36px;
+  margin-left: 15px;
+}
+
+.navbar div a  {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: var(--cp-black);
+  cursor: pointer;
+}
+
+.navbar div button {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: none;
+  background-color: var(--cp-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 24px;
+}
+
+.hero-1a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--cp-black);
+}
+
+.hero-1a div {
+  max-width: 587px;
+  padding: 30px;
+}
+
+.hero-1a div h1 {
+  word-spacing: 10px; 
+  font-size: 65px;
+}
+
+.hero-1a div h1 span {
+  text-shadow: 
+  rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: rgba(150, 25, 25, 0.856);
+}
+
+.hero-1a div p {
+  margin-top: 30px;
+  font-size: 18.5px;
+}
+
+.hero-1a div button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-1a img {
+  width: 587px; 
+  padding: 30px; 
+  opacity: 1;
+}
+
+.hero-1b {
+  max-width: 1320px;
+  margin: 50px auto;
+}
+
+.hero-1b div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: var(--cp-l-grey);
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div img {
+  width: 12%;
+}
+
+footer div p {
+  max-width: 400px; 
+  font-size: 16px;
+}
+
+.hero-2a {
+  max-width: 437px;
+  margin: 50px auto 0 auto;
+}
+
+.hero-2a h2 {
+  font-size: 50px; 
+  text-align: center;
+}
+
+.hero-2b {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 45px; 
+  margin-bottom: 40px; 
+  align-items: flex-end;
+}
+
+.hero-2b input {
+  height: inherit; 
+  width: 800px; 
+  font-size: inherit;
+  border: none;
+  border-bottom: 2px solid var(--cp-black);
+  outline: none;
+  background: transparent;
+}
+
+.hero-2b button {
+  border: none;
+  border-bottom: 2px solid var(--cp-black); 
+  height: inherit; 
+  width: 100px; 
+  font-size: 24px; 
+  cursor: pointer;
+}
+
+.hero-2c {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  max-width: 1320px; 
+  margin: 0 auto;
+}
+
+.hero-2d {
+  text-align: center; 
+  margin-bottom: 50px;
+}
+
+.hero-2d div {
+  box-shadow: 
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 30px; 
+    border-radius: 15px; 
+    padding: 10px;
+    background-color: var(--cp-white); 
+}
+
+.hero-2d div p {
+  background-color: rgba(255, 255, 255); 
+  margin: 0 5px; 
+  padding: 3px 10px; 
+  font-size: 20px; 
+  border-radius: 10px; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Cls Gym</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <style>
+    :root {
+      --cp-black: #202020;
+      --cp-white: #E7DDDD;
+      --cp-grey: #807A73;
+      --cp-orange: #FF682C;
+      --cp-l-grey: #C1B9B2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background-color: var(--cp-white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .logo {
+      width: 96px;
+      height: 84px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+
+    .links {
+      padding: 12px 24px;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .rounded-border {
+      border-radius: 9999px;
+    }
+
+    .border-none {
+      border: none;
+    }
+
+    .bg-orange {
+      background-color: var(--cp-orange);
+    }
+
+    .margin-center {
+      margin: 0 auto;
+    }
+
+    .max-container {
+      max-width: 1320px;
+    }
+
+    .mid-container {
+      max-width: 1150px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .text-caps {
+      text-transform: uppercase;
+    }
+
+    .no-underline {
+      text-decoration: none;
+    }
+
+    .text-black {
+      color: var(--cp-black);
+    }
+
+    .mt-30 {
+      margin-top: 30px;
+    }
+
+    .box-shadow-out {
+      box-shadow: 
+      rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .text-shadow-out {
+      text-shadow: 
+      rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .exercise-tab {
+      display: flex;
+      background-color: var(--cp-white);
+      width: 400px;
+      flex-direction: column;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 
+      rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transform: scale(1, 1);
+      transition: 0.2s all ease-in-out;
+    }
+
+    .exercise-tab:hover {
+      transform: scale(1.1, 1.1);
+      transition: 0.2s all ease-in-out;
+    }
+
+    .exercise-target-tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .exercise-target-a {
+      border-radius: 9999px;
+      margin-right: 10px;
+      font-size: 25px;
+      background-color: #ffa6a4;
+      padding: 5px 10px;
+    }
+
+    .exercise-target-b {
+      border-radius: 9999px;
+      margin-left: 10px;
+      font-size: 25px;
+      background-color: #9db6b9;
+      padding: 5px 10px;
+    }
+
+    .exercise-name {
+      text-align: center;
+      font-size: 35px;
+      padding: 10px 0;
+    }
+
+    .page-numbers {
+      font-size: 26px; 
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    .highlight-page {
+      background-color: #FF682C;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header style="background-color: var(--cp-l-grey);">
+    <nav class="navbar">
+      <div>
+        <div>
+          <img src="./images/dumbell.svg" alt="logo"/>
+          <h2>CLS</h2>
+        </div>
+        <a id="go-home" class="on-page" style="margin-left: 70px;">Home</a>
+        <a id="go-exercises">Exercises</a>
+      </div>
+
+      <div>
+        <a href="">Login</a>
+        <button>Sign Up</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home-page">
+    <div class="hero-1a">
+      <div>
+        <h1>Eat Sleep Gym <span>Repeat</span></h1>
+        <p>Educate yourself learning various gym exercises to incorporate into your workouts. This is your 1st step to becoming stronger.</p>
+        <button id="get-started-btn">Get started</button>
+      </div>
+  
+      <img src="./images/hero.svg" alt="main gym image"/>
+    </div>
+
+    <div class="hero-1b">
+      <div>
+        <img src="./images/bench-press2.svg" alt="press-up image"/>
+        <img src="./images/sumo.svg" alt="sumo deadlift image"/>
+        <img src="./images/squat.svg" alt="squat image"/>
+      </div>
+    </div>
+  </main>
+
+  <section id="exercise-page" class="hide-page" style="background-color: var(--cp-white);">
+    <div class="hero-2a">
+      <h2>Awesome exercises 
+        <span>just for you</span>
+      </h2>
+    </div>
+
+    <div class="hero-2b">
+      <input id="search-exercises" type="text" placeholder="Enter exercises here"/>
+      <button id="search-exercises-btn" type="submit">>>></button>
+    </div>
+
+    <div id="exercise-demos" class="hero-2c"></div>
+
+    <div class="hero-2d">
+      <div>
+        <p id="start-page" style="cursor: pointer;"><<<</p>
+        <p id="prev-page" style="cursor: pointer;">Prev</p>
+        <p><span id="viewing-page"></span> of <span id="total-pages"></span></p>
+        <p id="next-page" style="cursor: pointer;">Next</p>
+        <p id="end-page" style="cursor: pointer;">>>></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <img src="./images/logo-2.svg" alt="Company Logo"/>
+      <p>Simplistic fitness webpage, created by Cls154</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
+

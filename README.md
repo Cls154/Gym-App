@@ -1,5 +1,5 @@
 # Gym-App
-Simplistic gym app
+Simplistic gym app\
 Made with vanilla Javascript, ExpressJS and Sqlite
 
 ## Installation and Use
